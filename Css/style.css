@@ -71,7 +71,19 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
+button {
+    padding: 12px 25px;
+    background: #ff4b4b;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
+button:hover {
+    opacity: 0.9;
+}
 
 
 .imagens img {
