@@ -3,50 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Kevin</title>
-    <meta name="description" content="Projecto que divulga relógio inteligente">
-    <meta name="keywords" content="smartwatch, Kevin SmartWatch">
+    <meta name="description" content="Anuncio de SmartWatch">
+    <meta name="keywords" content="smartwatch, tecnologia, design">
     <meta name="robots" content="no index, no follow">
+    <title>KevinWatch</title>
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <!--Parte do cabeçalho-->
-   <section class="cabecalho">
-       <header>
-          <h1>KevinWatch</h1>
-             <nav>
-                <a href="#">Home</a>
-                <a href="#">Destaques</a>
-                <a href="#">Características</a>
-             </nav>
-       </header>
-   </section>
 
-   <!--Parte do primeiro anuncio-->
-   <section class="primeiro_anuncio">
-         <h1>O smartwatch perfeito</h1>
-         <p>Transforme sua rotina com tecnologia de ponta e design sofisticado</p>
-         <a href="#" title="Clique" target="_blank">Comprar</a>
-         <img src="img/foto1.jpg" alt="Foto do relogio inteligente">
-   </section>
+    <!--Cabeçalho principal -->
+    <div class="parte1">
+        <header>
+            <h1>KevinWatch</h1>
+            <nav>
+                <a class="activo" href="#h">Home</a>
+                <a href="#d">Destaques</a>
+                <a href="#c">Características</a>
+            </nav>
+        </header>
+    </div>
 
-   <!--Parte dos destaques-->
+    <!-- Secção de texto-->
+    <section class="texto">
+        <div class="conteudo">
+            <h2 id="h">O smartwatch perfeito</h2>
+            <p>Transforme sua rotina com tecnologia de ponta e design sofisticado.</p>
+            
+        </div>
 
-   <section class="destaques">
-      <h2>Destaques</h2>
-      <h3><span id="um">1</span>Design elegante</h3>
-      <p>Um visual moderno e sofisticado</p>
-      <h3><span id="dois">2</span>Acompanhamento de saude</h3>
-      <p>Monitore seus batimentos cardiacos</p>
-      <h3><span id="tres">3</span>Longa duração de bateria</h3>
-   </section>
+        <div class="imagens">
+            <img src="img/foto1.jpg" alt="Smartwatch"> 
+        </div>
+    </section>
 
-   <!--Parte das caracteristicas-->
-    <h2>Características</h2>
-    <img src="img/foto2.jpg" alt="Foto do relogío inteligente">
-     <h3>Monitore sua saúde e fique conectado o dia todo</h3>
-     <p>Recursos top de linha para você obter o maximo desempenho.</p>
-     <a href="#" title="Clique" target="_blank">Comprar</a>
+    <!-- Destaques -->
+    <section class="destaques">
+        <h2 id="d">Destaques</h2>
+
+        <div class="caixas">
+
+            <div class="caixa">
+                <div class="numero">1</div>
+                <h3>Design elegante</h3>
+                <p>Um visual moderno e sofisticado</p>
+            </div>
+
+            <div class="caixa">
+                <div class="numero">2</div>
+                <h3>Acompanhamento de saúde</h3>
+                <p>Monitore seus batimentos cardíacos</p>
+            </div>
+
+            <div class="caixa">
+                <div class="numero">3</div>
+                <h3>Longa duração da bateria</h3>
+                <p>Autonomia de até 7 dias</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Caracteristicas-->
+    <section class="caracteristicas">
+        <h2 id="c">Características</h2>
+
+        <div class="caracteristicas-caixa">
+            <div class="img">
+                <img src="img/foto2.jpg" alt="Smartwatch 2"> 
+            </div>
+
+            <div class="texto-caixa">
+                <h3>Monitore sua saúde e fique conectado o dia todo</h3>
+                <p>Recursos top de linha para você obter o máximo desempenho</p>
+               
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

@@ -1,1 +1,234 @@
-@charset "UTF-8";
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff8f4;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap; /* Para quebrar no mobile */
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav a.activo,
+nav a:hover {
+    color: #ff4b4b;
+}
+
+/* Secao texto e imagens */
+.texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 25px;
+    flex-wrap: wrap; /* telefone */
+}
+
+.conteudo {
+    max-width: 500px;
+}
+
+.conteudo h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.imagens img {
+    width: 350px;
+}
+
+/* Parte da secao destaque */
+.destaques {
+    margin-top: 40px;
+    padding: 25px;
+}
+
+.destaques h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* <--- telefone*/
+}
+
+.caixa {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 32%; /* computador */
+    min-width: 250px; /* telefone */
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.numero {
+    background: #ff4b4b;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.caixa h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.caixa p {
+    color: #555;
+}
+
+/* secao caracteristicas */
+.caracteristicas {
+    margin-top: 40px;
+    padding: 25px;
+}
+
+.caracteristicas h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.caracteristicas-caixa {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap; 
+}
+
+.img img {
+    width: 250px;
+    border-radius: 12px;
+}
+
+.texto-caixa {
+    max-width: 500px;
+}
+
+.texto-caixa h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.texto-caixa p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/*Responsividade*/
+
+
+/* telefone 600px */
+@media (max-width: 600px) {
+
+    header {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .imagens img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 30px;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+
+    .caracteristicas-caixa {
+        text-align: center;
+    }
+
+    .img img {
+        margin: auto;
+    }
+}
+
+/* Tablet 600px–900px */
+@media (max-width: 900px) {
+    .texto {
+        flex-direction: column;
+    }
+
+    .caracteristicas-caixa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo h2 {
+        font-size: 35px;
+    }
+}
+
+/* Monitores grandes */
+@media (min-width: 1200px) {
+    .conteudo h2 {
+        font-size: 55px;
+    }
+}
